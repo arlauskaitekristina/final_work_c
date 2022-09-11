@@ -1,9 +1,9 @@
 ﻿string[] myArray = new string[5] { "hello", "2", "pink", "computer", ":)" };
 string[] finResult = new string[myArray.Length];
+int count = 0;
 
 string[] ResultArray(string[] myArray, string[] finResult)
 {
-    int count = 0;
     for (int i = 0; i < myArray.Length; i++)
     {
         if (myArray[i].Length <= 3)
@@ -19,7 +19,7 @@ void PrintArray(string[] myArray)
 {
     for (int i = 0; i < myArray.Length; i++)
     {
-        Console.Write(myArray[i] + " ");
+        Console.Write(myArray[i] + ", ");
     }
     Console.WriteLine();
 }
